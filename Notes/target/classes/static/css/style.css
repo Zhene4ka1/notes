@@ -1,0 +1,124 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url("image/img_1.png");
+    background-size: contain;
+    margin-top: 65px;
+}
+.conteiner{
+    border: 2px solid #bbb280;
+    width: 950px;
+    background-color:#F2EFCE;
+    margin: auto;
+}
+.title{
+    display: flex;
+    padding: 20px;
+}
+.btn_enter{
+    margin-left: auto;
+}
+.enterB{
+    margin: 10px;
+    background-color: #9DDE69;
+    border: none;
+    width: 120px;
+    height: 45px;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.note_title{
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid #9DDE69;
+    padding: 14px 40px 13px 40px;
+    color: #4C633A;
+}
+.textTitle{
+    font-size: 25px;
+    text-align: center;
+    margin: 24px 0px;
+}
+.tableNotes{
+    margin: auto;
+    border: 2px solid #4C633A;
+    width: 720px;
+    padding: 20px 40px;
+}
+table{
+    margin: auto;
+    width: inherit;
+    border-collapse: collapse;
+}
+tr{
+    background-color: #D8D29F;
+    display: grid;
+    border-bottom: 25px solid #F2EFCE;
+}
+td{
+    padding: 10px 15px 0px 19px;
+}
+.dateNote{
+    margin-bottom: 5px;
+    margin-left: auto;
+}
+.line{
+    border-bottom: 3px solid #F2EFCE;
+}
+.addB{
+    margin: auto;
+    background-color: #9DDE69;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 300;
+    color: black;
+}
+.knopki{
+    margin: auto;
+    background-color: #FF5252;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 300;
+    color: white;
+}
+.btn_add{
+    padding: inherit;
+    text-align: center;
+}
+.addB{
+    margin: auto;
+    background-color: #9DDE69;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+.btn_add{
+    margin: 35px 0px;
+    padding: inherit;
+    text-align: center;
+}
+.addInput{
+    background-color: #F2EFCE;
+    margin: 10px 50px;
+    border: none;
+    width: 735px;
+    border-radius: 3px;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+}
+.formAdd{
+    padding: 30px 0px;
+    width: 850px;
+    margin: auto;
+    background-color: #D8D29F;
+    text-align: center;
+}

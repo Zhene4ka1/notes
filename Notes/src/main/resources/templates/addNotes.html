@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Добавление</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/addStyle.css}">
+</head>
+<body>
+<div class="conteiner">
+  <div class="title">
+    <div class="note_title">
+      <a th:href="@{/}">ЗАМЕТКИ</a>
+    </div>
+    <div class="btn_enter">
+      <button class="enterB" type="submit">Войти</button>
+    </div>
+  </div>
+  <div class="textTitle">Добавление</div>
+  <div class="formAdd">
+  <form th:action="@{/save}" th:object="${note}" method="post">
+    <input class="addInput" type="text" th:field="*{title}" placeholder="Добавить заголовок"><br>
+    <textarea class="addInput" type="text" th:field="*{body}" placeholder="Добавить текст заметки" style="height: 150px;width: 735px;"></textarea><br>
+    <input class="addInput" type="date" th:field="*{date}" placeholder="Добавить дату"><br>
+    <button class="addB" type="submit"> Сохранить</button>
+  </form>
+  </div>
+</div>
+</body>
+</html>

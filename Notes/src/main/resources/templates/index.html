@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заметки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="conteiner">
+<div class="title">
+    <div class="note_title">
+        <a th:href="@{/}">ЗАМЕТКИ</a>
+        </div>
+        <div class="btn_enter">
+            <button class="enterB" type="submit">Войти</button>
+        </div>
+</div>
+    <div class="textTitle">Заметки пользователей</div>
+    <div class="tableNotes">
+    <table>
+        <tbody>
+        <tr th:each = "note: ${notes}">
+            <td th:text="${note.title}"></td>
+            <td class="line">                           </td>
+            <td th:text="${note.body}"></td>
+            <td class="dateNote" th:text="${note.date}"></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="btn_add">
+        <a class="addB" th:href="@{/add}">Хочу сделать свою заметку!</a>
+    </div>
+</div>
+</body>
+</html>

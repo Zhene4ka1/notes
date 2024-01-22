@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ваши заметки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/UNstyle.css}">
+</head>
+<body>
+<div class="conteiner">
+  <div class="title">
+    <div class="note_title">
+      <a class="notes" th:href="@{/}">ЗАМЕТКИ</a>
+    </div>
+    <div class="btn_enter">
+      <button class="enterB" type="submit">Войти</button>
+    </div>
+  </div>
+  <div class="textTitle">Ваши заметки</div>
+  <div class="tableNotes">
+    <table>
+      <tbody>
+
+      <tr th:each = "note: ${notes}">
+        <td th:text="${note.title}"> </td>
+        <td class="line">                           </td>
+        <td th:text="${note.body}"></td>
+        <td class="dateNote" th:text="${note.date}"></td>
+      <td class="tdOpen"><a  class="open" th:href="@{/info(id=${note.id})}">Посмотреть содержимое</a></td>
+      </tr>
+      </tbody>
+    </table>
+  <div><a class="knopki" th:href="@{/add}">+</a></div></div>
+  <div class="textTitle">Подсмотреть заметки других</div>
+  <div class="btn_add">
+    <a class="addB" th:href="@{/}">Открыть заметки пользователей!</a>
+  </div>
+</div>
+</body>
+</html>

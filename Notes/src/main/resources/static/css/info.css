@@ -1,0 +1,86 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url("image/img_1.png");
+    background-size: contain;
+    margin-top: 65px;
+}
+.conteiner{
+    border: 2px solid #bbb280;
+    width: 950px;
+    background-color:#F2EFCE;
+    margin: auto;
+}
+.title{
+    display: flex;
+    padding: 20px;
+}
+.notes, a{
+    border-radius: 0px;
+    background-color: #f2efce;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid #9DDE69;
+    padding: 14px 40px 13px 40px;
+    color: #4C633A;
+}
+
+.btn_enter{
+    margin-left: auto;
+}
+.enterB{
+    margin: 10px;
+    background-color: #9DDE69;
+    border: none;
+    width: 120px;
+    height: 45px;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.note_title{
+    margin: 20px;
+}
+.textTitle{
+    font-size: 25px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.knopki, a {
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: auto;
+    background-color: #9dde69;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.info{
+    padding: 5px 0px;
+    width: 850px;
+    margin: 25px auto;
+    background-color: #D8D29F;
+    text-align: center;
+}
+.titleNote{
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 25px;
+}
+.twobtn{
+    margin: 25px 0px;
+    display: flex;
+}
+.bodyNote{
+    font-weight: 100;
+    font-size: 20px;
+    padding: 0px 50px;
+    text-align: left;
+}
+.del{
+    background-color: #FF5252;
+}
